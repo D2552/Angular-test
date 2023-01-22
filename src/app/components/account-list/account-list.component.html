@@ -1,0 +1,29 @@
+
+<p>hi</p>
+
+<div class="mat-elevation-z8">
+	<h1>DISPLAY DATA</h1>
+
+<table class="table table-hover">
+	<thead>
+	  <tr class="table-active table-dark">
+		<th scope="col">id</th>
+		<th scope="col">accountNo</th>
+		<th scope="col">createdAt</th>
+		<th scope="col">amount</th>
+		<th scope="col">userId</th>
+		<th scope="col">user</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr *ngFor="let account of accounts">
+		<td scope="row">{{account.id}}</td>
+		<td scope="row">{{account.accountNo}}</td>
+		<td scope="row">{{account.createdAt}}</td>
+		<td scope="row">{{account.amount}}</td>
+		<td scope="row">{{account.userId}}</td>
+		<td scope="row">{{account.user}}</td>
+	  
+	</tbody>
+  </table>
+</div>
